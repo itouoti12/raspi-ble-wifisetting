@@ -1,5 +1,7 @@
 # raspiのwifi設定をbluetoothから行う
 
+![gif](assets/raspi_ble.gif)
+
 # インストール
 - ラズパイに
 - `sudo pip3 install pybleno`
@@ -54,22 +56,29 @@ WantedBy=multi-user.target
 ```
 
 - デーモンの再読み込み
-sudo systemctl daemon-reload
+
+    `sudo systemctl daemon-reload`
 
 - サービスの実行
-sudo systemctl start ble_wifi 
+
+    `sudo systemctl start ble_wifi` 
 
 - サービスの起動確認
-sudo systemctl status ble_wifi 
+
+    `sudo systemctl status ble_wifi` 
 
 - サービスの自動起動を有効
-sudo systemctl enable ble_wifi 
+
+    `sudo systemctl enable ble_wifi`
 
 - サービスの自動起動状態を確認
-systemctl is-enabled ble_wifi 
+
+    `systemctl is-enabled ble_wifi` 
 
 - サービスの停止
-sudo systemctl stop ble_wifi 
+
+    `sudo systemctl stop ble_wifi` 
 
 - サービスの自動起動を無効
-sudo systemctl disable ble_wifi 
+
+    `sudo systemctl disable ble_wifi`
