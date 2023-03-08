@@ -1,5 +1,7 @@
 # raspiのwifi設定をbluetoothから行う
 
+![gif](https://raw.github.com/wiki/itouoti12/raspi-ble-wifisetting/images/raspi_ble.gif)
+
 # インストール
 - ラズパイに
 - `sudo pip3 install pybleno`
